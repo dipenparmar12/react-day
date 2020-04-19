@@ -26,7 +26,7 @@ class TemperatureInput extends Component {
   handleChange(e) {
     this.props.onTemperatureChange(e.target.value);
   }
-  onTemperatureChange;
+
   render() {
     const temperature = this.props.temperature;
     const scale = this.props.scale;
@@ -55,7 +55,7 @@ export default class TempCalc extends Component {
     this.handleCelesiusChange = this.handleCelesiusChange.bind(this);
     this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
   }
-  value;
+
   handleCelesiusChange(temperature) {
     this.setState({ scale: 'c', temperature });
   }

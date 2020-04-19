@@ -1,4 +1,5 @@
 import React from 'react';
+import {} from './App.css';
 // import HelloWorld from './HelloWorld/HelloWorld';
 // import ClickTic from './Practice/ClickTic';
 // import LoginControl from './Practice/LoginControl';
@@ -8,7 +9,9 @@ import React from 'react';
 // import NameForm from './Practice/NameForm';
 // import FormSelectElement from './Practice/FormSelectElement';
 // import FormHandlingMultipleInputs from './Practice/FormHandlingMultipleInputs';
-import TempCalc from './Practice/TempCalc';
+// import TempCalc from './Practice/TempCalc';
+import TicTacTokGame from './Practice/TicTacTok/TicTacTokGame';
+// import Game from './Practice/TicTacTok/Game';
 
 function App() {
   return (
@@ -22,7 +25,8 @@ function App() {
       {/* <NameForm /> */}
       {/* <FormSelectElement /> */}
       {/* <FormHandlingMultipleInputs /> */}
-      <TempCalc />
+      {/* <TempCalc /> */}
+      <TicTacTokGame />
     </div>
   );
 }
