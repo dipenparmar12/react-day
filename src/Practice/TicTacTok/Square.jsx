@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function Square(props) {
-  return (
-    <button className="square" onClick={props.BtnClick}>
-      {props.myValue}
-    </button>
-  );
+export default class Square extends Component {
+  render() {
+    return (
+      <button className="square" onClick={this.props.squareBtn}>
+        {this.props.squareBtnValue}
+      </button>
+    );
+  }
 }

@@ -2,17 +2,12 @@ import React, { Component } from 'react';
 import Square from './Square';
 
 export default class Board extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   rendorSquare(index) {
     return (
       <Square
-        myValue={this.props.squares[index]}
-        BtnClick={(e) => {
-          this.props.onClick(index);
+        squareBtnValue={this.props.squareBtnValue[index]}
+        squareBtn={(e) => {
+          this.props.boardProps_onClick(index);
         }}
       />
     );
@@ -36,6 +31,8 @@ export default class Board extends Component {
           {this.rendorSquare(7)}
           {this.rendorSquare(8)}
         </div>
+        <h1>{this.props.status}</h1>
+        <div>{this.props.moves}</div>
       </div>
     );
   }

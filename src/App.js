@@ -10,8 +10,8 @@ import {} from './App.css';
 // import FormSelectElement from './Practice/FormSelectElement';
 // import FormHandlingMultipleInputs from './Practice/FormHandlingMultipleInputs';
 // import TempCalc from './Practice/TempCalc';
-import TicTacTokGame from './Practice/TicTacTok/TicTacTokGame';
-// import Game from './Practice/TicTacTok/Game';
+// import TicTacTokGame from './Practice/TicTacTok/TicTacTokGame';
+import Game from './Practice/TicTacTok/Game';
 
 function App() {
   return (
@@ -26,7 +26,8 @@ function App() {
       {/* <FormSelectElement /> */}
       {/* <FormHandlingMultipleInputs /> */}
       {/* <TempCalc /> */}
-      <TicTacTokGame />
+      {/* <TicTacTokGame /> */}
+      <Game />
     </div>
   );
 }
