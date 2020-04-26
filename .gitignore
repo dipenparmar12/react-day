@@ -24,5 +24,4 @@ fields_sample.json
 .vscode
 _ignore
 *.php-tmp
-/build
 package-lock.json
