@@ -1,6 +1,6 @@
 import React from 'react';
 import {} from './App.css';
-import TodoApp from './Practice/TodoApp/TodoApp';
+// import TodoApp from './Practice/TodoApp/TodoApp';
 // import HelloWorld from './HelloWorld/HelloWorld';
 // import ClickTic from './Practice/ClickTic';
 // import LoginControl from './Practice/LoginControl';
@@ -12,7 +12,7 @@ import TodoApp from './Practice/TodoApp/TodoApp';
 // import FormHandlingMultipleInputs from './Practice/FormHandlingMultipleInputs';
 // import TempCalc from './Practice/TempCalc';
 // import TicTacTokGame from './Practice/TicTacTok/TicTacTokGame';
-// import Game from './Practice/TicTacTok/Game';
+import Game from './Practice/TicTacTok/Game';
 
 export default function App() {
   return (
@@ -29,8 +29,8 @@ export default function App() {
       {/* <FormHandlingMultipleInputs /> */}
       {/* <TempCalc /> */}
       {/* <TicTacTokGame /> */}
-      {/* <Game /> */}
-      <TodoApp />
+      <Game />
+      {/* <TodoApp /> */}
     </div>
   );
 }
