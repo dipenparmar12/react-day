@@ -14,9 +14,10 @@ import TodoApp from './Practice/TodoApp/TodoApp';
 // import TicTacTokGame from './Practice/TicTacTok/TicTacTokGame';
 // import Game from './Practice/TicTacTok/Game';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
+      <h3>ReactJs</h3>
       {/* <HelloWorld /> */}
       {/* <ClickTic /> */}
       {/* <LoginControl /> */}
@@ -33,7 +34,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
-
-// <HelloWorld msg="hi... HelloWorld" />
