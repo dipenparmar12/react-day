@@ -6,8 +6,7 @@ export default function TodoInput(props) {
         type="text"
         name="newItemText"
         id="newItemText"
-        onChange={(e) => props.handleFormInput(e)}
-        onKeyDown={(e) => props.keyPress(e)}
+        onKeyDown={(e) => props.handleEnterPress(e)}
       />
     </React.Fragment>
   );
