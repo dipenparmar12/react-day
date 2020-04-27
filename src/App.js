@@ -1,5 +1,6 @@
 import React from 'react';
-import {} from './App.css';
+import './App.css';
+
 // import HelloWorld from './HelloWorld/HelloWorld';
 // import ClickTic from './Practice/ClickTic';
 // import LoginControl from './Practice/LoginControl';
@@ -14,10 +15,10 @@ import {} from './App.css';
 import Game from './Practice/TicTacTok/Game';
 // import TodoApp from './Practice/TodoApp/TodoApp';
 
-export default function App() {
+function App() {
   return (
     <div className="App">
-      <h3>ReactJs</h3>
+      {/* <h3>ReactJs</h3> */}
       {/* <HelloWorld /> */}
       {/* <ClickTic /> */}
       {/* <LoginControl /> */}
@@ -34,3 +35,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
