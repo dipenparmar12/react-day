@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 class ClickTic extends React.Component {
   constructor(props) {
     super(props);
-    console.log("constructor");
+    console.log('constructor');
     this.state = { counter: 0 };
 
     this.handleDescriment = this.handleDescriment.bind(this);
@@ -39,19 +39,19 @@ class ClickTic extends React.Component {
   }
 
   componentWillMount() {
-    console.log("WillMount");
+    console.log('WillMount');
   }
 
   componentDidMount() {
-    console.log("DidMount");
+    console.log('DidMount');
   }
 
   componentWillUpdate() {
-    console.log("WillUpdate");
+    console.log('WillUpdate');
   }
 
   componentDidUpdate() {
-    console.log("DidUpdate");
+    console.log('DidUpdate');
   }
 
   // componentDidCatch() {
