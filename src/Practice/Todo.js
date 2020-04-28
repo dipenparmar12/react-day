@@ -40,8 +40,10 @@ export default class Todo extends Component {
     return (
       <div className="App">
         <h1 className="center blue-text">Todo's</h1>
-        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
         <AddTodo addTodo={this.addTodo} />
+        <br />
+        <br />
+        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
       </div>
     );
   }
@@ -73,11 +75,7 @@ function Todos({ todos, deleteTodo }) {
     </ListItem>
   );
 
-  return (
-    <List component="nav" aria-label="main mailbox folders">
-      {todoList}
-    </List>
-  );
+  return <List aria-label="main mailbox folders">{todoList}</List>;
 }
 
 //// -------
@@ -112,7 +110,7 @@ class AddTodo extends Component {
         <TextField
           fullWidth
           id="todoText"
-          label="Standard"
+          label="Write Todo"
           onChange={this.handleInput}
           value={this.state.todoContent}
         />
