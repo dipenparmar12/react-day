@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
-import ScrollableTabs from './Internet/ScrollableTabs';
+
+// import { BrowserRouter, Route } from 'react-router-dom';
+// import ScrollableTabs from './Internet/ScrollableTabs';
 
 // import HelloWorld from './HelloWorld/HelloWorld';
 // import ClickTic from './Practice/ClickTic';
@@ -15,7 +16,8 @@ import ScrollableTabs from './Internet/ScrollableTabs';
 // import TempCalc from './Practice/TempCalc';
 // import TicTacTokGame from './Practice/TicTacTok/TicTacTokGame';
 // import Game from './Practice/TicTacTok/Game';
-import TodoApp from './Practice/TodoApp/TodoApp';
+// import TodoApp from './Practice/TodoApp/TodoApp';
+import Todo from './Practice/Todo';
 
 function App() {
   return (
@@ -35,13 +37,13 @@ function App() {
       {/* <Game /> */}
       {/* <TodoApp /> */}
       {/* <Navbar /> */}
-
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <div>
           <Route exact path="/todo" component={TodoApp} />
           <Route exact path="/practice" component={ScrollableTabs} />
         </div>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Todo />
     </div>
   );
 }
