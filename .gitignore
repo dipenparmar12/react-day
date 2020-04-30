@@ -24,5 +24,5 @@ yarn-error.log*
 
 # my_other react Projects
 /test
-package-lock.json
 docs
+package-lock.json
