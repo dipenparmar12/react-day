@@ -10,6 +10,15 @@ export default class Navbar extends Component {
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
+            <li>
+              <NavLink to="/Game">Tic Doc</NavLink>
+            </li>
+            <li>
+              <NavLink to="/TodoApp">TodoApp</NavLink>
+            </li>
+            <li>
+              <NavLink to="/Todo">Todo</NavLink>
+            </li>
             {/* <li>
               <NavLink to="/HelloWorld">HelloWorld</NavLink>
             </li> */}
@@ -45,15 +54,6 @@ export default class Navbar extends Component {
             {/* <li>
               <NavLink to="/TicTacTokGame">TicToc My</NavLink>
             </li> */}
-            <li>
-              <NavLink to="/Game">Tic Doc</NavLink>
-            </li>
-            <li>
-              <NavLink to="/TodoApp">TodoApp</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Todo">Todo</NavLink>
-            </li>
           </ul>
         </div>
       </nav>

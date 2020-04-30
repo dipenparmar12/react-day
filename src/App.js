@@ -4,7 +4,7 @@ import Navbar from './layout/Navbar';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Pages/HomePage';
 
-import HelloWorld from './HelloWorld/HelloWorld';
+import HelloWorld from './Practice/HelloWorld';
 import ClickTic from './Practice/ClickTic';
 import LoginControl from './Practice/LoginControl';
 import Toggle from './Practice/Toggle';
