@@ -43,7 +43,7 @@ export default class Game extends Component {
     //// for Retrive History with btn click
     const moves = history.map((step, i) => {
       const desc = i ? 'Go toMove #' + i : 'GoTo Starting Point';
-      console.log(step);
+      // console.log(step);
       return (
         <li key={i}>
           <button onClick={() => this.junpTo(i)}>{desc}</button>

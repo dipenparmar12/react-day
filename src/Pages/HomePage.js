@@ -3,12 +3,11 @@ import addColor from '../hoc/addColor';
 import Axios from 'axios';
 
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
   state = {
@@ -17,8 +16,10 @@ class HomePage extends Component {
 
   componentDidMount() {
     Axios.get('https://jsonplaceholder.typicode.com/users').then((res) => {
+      const take = Math.floor(Math.random() * res.data.length);
+      const usersRandom = res.data.slice(0, take.length > 3 ? 3 : take);
       this.setState({
-        users: res.data,
+        users: usersRandom,
       });
     });
   }
@@ -55,14 +56,17 @@ class HomePage extends Component {
 export default addColor(HomePage);
 
 function Test(props) {
+  const { user } = props;
   return (
     <Card style={{ maxWidth: '300px', marginBottom: 15 }}>
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
-          {props.user.name}
+          <Link to={'/post/' + user.id}>
+            {user.id}. {user.name}
+          </Link>
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          {props.user.company.catchPhrase}
+          {user.company.catchPhrase}
           Lizards are a widespread group of squamate reptiles, with over 6,000
           species, ranging
         </Typography>
