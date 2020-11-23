@@ -25,4 +25,16 @@ yarn-error.log*
 # my_other react Projects
 /test
 docs
-package-lock.json
+
+/vendor
+/.idea
+/.vscode
+/.vagrant
+yarn-error.log
+.env
+.env.backup
+
+.phpintel
+*.php-tmp
+/.phpintel
+.vscode

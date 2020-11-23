@@ -67,7 +67,7 @@ class ClickTic extends React.Component {
 
 export default ClickTic;
 
-// 1 Contructor
+// 1 Constructor
 // 2.1 componentWillMount
 // 2.2 componentDidMount
 
